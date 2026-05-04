@@ -1,0 +1,5 @@
+# Ignore the source PDF used for updating website content
+1-s2.0-S2772918424000304-main.pdf
+
+# Ignore the nested DeDTs repository folder
+DeDTs/
