@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeDTs - Decentralized Digital Twin Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            min-height: 100vh;
+            background: radial-gradient(circle at top, rgba(59, 130, 246, 0.18), transparent 30%),
+                        radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.12), transparent 20%),
+                        #090e23;
+            color: #e2e8f0;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.92), rgba(99, 102, 241, 0.95));
+            box-shadow: 0 30px 80px rgba(15, 23, 42, 0.35);
+        }
+        .glass-panel {
+            backdrop-filter: blur(18px);
+            background: rgba(15, 23, 42, 0.72);
+            border: 1px solid rgba(148, 163, 184, 0.16);
+        }
+        .feature-icon {
+            width: 3rem;
+            height: 3rem;
+            display: grid;
+            place-items: center;
+            border-radius: 1rem;
+            background: rgba(59, 130, 246, 0.15);
+            color: #3b82f6;
+        }
+        .card-hover:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 35px 60px rgba(15, 23, 42, 0.2);
+        }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, rgba(59, 130, 246, 0), rgba(59, 130, 246, 0.35), rgba(59, 130, 246, 0));
+        }
+    </style>
+</head>
+<body class="text-slate-100">
+    <nav class="sticky top-0 z-50 backdrop-blur bg-slate-950/70 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-3xl bg-gradient-to-br from-sky-500 to-indigo-500 flex items-center justify-center shadow-lg shadow-sky-500/20">
+                    <i class="fas fa-network-wired text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-sm uppercase tracking-[0.24em] text-sky-300">DeDTs</p>
+                    <p class="font-semibold text-white">Digital Twin Platform</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#features" class="hover:text-white transition">Capabilities</a>
+                <a href="#objectives" class="hover:text-white transition">Objectives</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-bg rounded-b-[3.5rem] py-24 px-6">
+            <div class="max-w-6xl mx-auto grid gap-12 lg:grid-cols-[1.2fr_0.8fr] items-center">
+                <div>
+                    <p class="mb-6 text-sm uppercase tracking-[0.35em] text-sky-200/80">Decentralized Research Platform</p>
+                    <h1 class="text-5xl sm:text-6xl font-bold leading-tight text-white">DeDTs: Trusted Digital Twin Infrastructure on Web3</h1>
+                    <p class="mt-8 max-w-2xl text-lg leading-8 text-slate-200">A professional platform for building secure, auditable, and collaborative Digital Twin ecosystems using blockchain, IP-NFT provenance, decentralized governance, and federated intelligence.</p>
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                        <a href="#about" class="inline-flex items-center justify-center rounded-3xl bg-white px-8 py-4 text-lg font-semibold text-slate-900 shadow-lg shadow-slate-950/20 hover:bg-slate-100 transition">Explore the Platform</a>
+                        <a href="#contact" class="inline-flex items-center justify-center rounded-3xl border border-slate-300/25 px-8 py-4 text-lg text-white hover:border-slate-100 hover:bg-white/10 transition">Contact the Research Team</a>
+                    </div>
+                </div>
+                <div class="glass-panel rounded-[2rem] border border-slate-700/60 p-8 shadow-2xl shadow-slate-950/30">
+                    <div class="grid gap-8">
+                        <div class="rounded-[1.75rem] border border-slate-700/40 bg-slate-950/80 p-6">
+                            <p class="text-sm uppercase tracking-[0.24em] text-sky-300/90">Research Lead</p>
+                            <p class="mt-3 text-2xl font-semibold text-white">Dr. Seyed Mojtaba Hosseini Bamakan</p>
+                            <p class="mt-3 text-slate-300">Leading the development of decentralized digital twin architectures with a focus on security, transparency, and intellectual property protection.</p>
+                        </div>
+                        <div class="grid gap-4 sm:grid-cols-2">
+                            <div class="rounded-3xl bg-slate-900/90 p-5">
+                                <p class="text-sm uppercase tracking-[0.24em] text-slate-400">Decentralized Storage</p>
+                                <p class="mt-3 text-xl font-semibold text-white">IPFS + Filecoin</p>
+                            </div>
+                            <div class="rounded-3xl bg-slate-900/90 p-5">
+                                <p class="text-sm uppercase tracking-[0.24em] text-slate-400">Governance</p>
+                                <p class="mt-3 text-xl font-semibold text-white">DAO Collaboration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="max-w-7xl mx-auto px-6 py-24">
+            <div class="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] items-center">
+                <div>
+                    <p class="text-sm uppercase tracking-[0.28em] text-sky-400">About the project</p>
+                    <h2 class="mt-4 text-4xl font-bold text-white">Built for secure, transparent, and collaborative digital twin systems.</h2>
+                    <p class="mt-6 text-lg leading-8 text-slate-300">DeDTs is a next-generation research platform that bridges Digital Twin innovation with decentralized ledger technology. It enables provenance-aware IP protection, secure data sharing, and trustable analytics for complex engineering and research domains.</p>
+                </div>
+                <div class="grid gap-6">
+                    <div class="rounded-3xl bg-slate-950/80 border border-slate-700/50 p-8 shadow-xl shadow-slate-950/20">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <p class="text-sm uppercase tracking-[0.24em] text-sky-300">Security by design</p>
+                                <p class="mt-1 text-lg font-semibold text-white">Immutable provenance and private collaboration.</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-400">Leverage blockchain immutability, zero-knowledge proofs, and federated learning to protect sensitive models and data while preserving transparency.</p>
+                    </div>
+                    <div class="rounded-3xl bg-slate-950/80 border border-slate-700/50 p-8 shadow-xl shadow-slate-950/20">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="feature-icon"><i class="fas fa-cubes"></i></div>
+                            <div>
+                                <p class="text-sm uppercase tracking-[0.24em] text-sky-300">Modular architecture</p>
+                                <p class="mt-1 text-lg font-semibold text-white">Flexible components for digital twin creation.</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-400">Combine on-chain governance, decentralized storage, and IP-NFT frameworks to build composable digital twin services and collaborative research pipelines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="features" class="max-w-7xl mx-auto px-6 py-24">
+            <div class="text-center mb-16">
+                <p class="text-sm uppercase tracking-[0.28em] text-sky-400">Capabilities</p>
+                <h2 class="mt-4 text-4xl font-bold text-white">DeDTs Core Capabilities</h2>
+            </div>
+            <div class="grid gap-8 lg:grid-cols-3">
+                <div class="glass-panel p-8 rounded-[2rem] card-hover">
+                    <div class="feature-icon mb-6"><i class="fas fa-network-wired"></i></div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Decentralized Data Management</h3>
+                    <p class="text-slate-300">Securely store Digital Twin assets and simulation data with IPFS, Filecoin, and distributed ledger indexing.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-[2rem] card-hover">
+                    <div class="feature-icon mb-6"><i class="fas fa-certificate"></i></div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">IP-NFT Provenance</h3>
+                    <p class="text-slate-300">Issue intellectual property tokens to record ownership, licensing, and research provenance in a tamper-proof way.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-[2rem] card-hover">
+                    <div class="feature-icon mb-6"><i class="fas fa-users-cog"></i></div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">DAO Governance</h3>
+                    <p class="text-slate-300">Enable collaborative decision-making and resource allocation across stakeholders with decentralized governance.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-[2rem] card-hover">
+                    <div class="feature-icon mb-6"><i class="fas fa-brain"></i></div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Federated Learning</h3>
+                    <p class="text-slate-300">Improve predictive models using privacy-aware distributed training without centralizing raw data.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-[2rem] card-hover">
+                    <div class="feature-icon mb-6"><i class="fas fa-hand-holding-dollar"></i></div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Decentralized Funding</h3>
+                    <p class="text-slate-300">Support research and product growth through NFT-based fundraising and DAO-backed incentives.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-[2rem] card-hover">
+                    <div class="feature-icon mb-6"><i class="fas fa-user-secret"></i></div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Confidentiality Enhancements</h3>
+                    <p class="text-slate-300">Adopt zero-knowledge proof and secret sharing methods to safeguard sensitive digital twin information.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="objectives" class="max-w-7xl mx-auto px-6 py-24">
+            <div class="grid gap-14 lg:grid-cols-[1.2fr_0.8fr] items-center">
+                <div>
+                    <p class="text-sm uppercase tracking-[0.28em] text-sky-400">Research Objectives</p>
+                    <h2 class="mt-4 text-4xl font-bold text-white">Strategic goals for next-generation digital twin ecosystems.</h2>
+                    <p class="mt-6 text-lg leading-8 text-slate-300">Our research plan focuses on solving foundational problems in digital twin adoption by combining trust, privacy, and sustainable governance into one platform.</p>
+                </div>
+                <div class="grid gap-6">
+                    <div class="rounded-[2rem] bg-slate-950/80 border border-slate-700/50 p-8 shadow-xl shadow-slate-950/20">
+                        <p class="text-sm uppercase tracking-[0.24em] text-sky-300">O1</p>
+                        <h3 class="mt-4 text-2xl font-semibold text-white">Assess Digital Twin challenges and Web3 applicability</h3>
+                        <p class="mt-3 text-slate-400">Analyze where blockchain, decentralized storage, and tokenized IP yield the greatest benefit for digital twin workflows.</p>
+                    </div>
+                    <div class="rounded-[2rem] bg-slate-950/80 border border-slate-700/50 p-8 shadow-xl shadow-slate-950/20">
+                        <p class="text-sm uppercase tracking-[0.24em] text-sky-300">O2</p>
+                        <h3 class="mt-4 text-2xl font-semibold text-white">Build a tamper-proof collaboration platform</h3>
+                        <p class="mt-3 text-slate-400">Develop secure shared infrastructure for federated learning, data exchange, and cooperative model development.</p>
+                    </div>
+                    <div class="rounded-[2rem] bg-slate-950/80 border border-slate-700/50 p-8 shadow-xl shadow-slate-950/20">
+                        <p class="text-sm uppercase tracking-[0.24em] text-sky-300">O3</p>
+                        <h3 class="mt-4 text-2xl font-semibold text-white">Create IP-NFT frameworks for provenance</h3>
+                        <p class="mt-3 text-slate-400">Anchor intellectual property assets and fundraising mechanisms to verifiable digital tokens.</p>
+                    </div>
+                    <div class="rounded-[2rem] bg-slate-950/80 border border-slate-700/50 p-8 shadow-xl shadow-slate-950/20">
+                        <p class="text-sm uppercase tracking-[0.24em] text-sky-300">O4</p>
+                        <h3 class="mt-4 text-2xl font-semibold text-white">Deliver transparent predictive analytics</h3>
+                        <p class="mt-3 text-slate-400">Implement analytics pipelines with on-chain auditing, model validation, and trusted reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="max-w-7xl mx-auto px-6 py-24">
+            <div class="rounded-[3rem] border border-slate-700/50 bg-slate-900/90 p-12 shadow-2xl shadow-slate-950/40">
+                <div class="grid gap-10 lg:grid-cols-[1.4fr_0.8fr] items-center">
+                    <div>
+                        <p class="text-sm uppercase tracking-[0.28em] text-sky-400">Get in touch</p>
+                        <h2 class="mt-4 text-4xl font-bold text-white">Discuss research, collaboration, or platform integration.</h2>
+                        <p class="mt-6 text-lg leading-8 text-slate-300">Contact the DeDTs research team to explore secure digital twin architectures and decentralized innovation pathways.</p>
+                    </div>
+                    <div class="rounded-[2rem] bg-slate-950/90 border border-slate-700/60 p-8">
+                        <p class="text-sm uppercase tracking-[0.24em] text-slate-400">Research Lead</p>
+                        <p class="mt-4 text-2xl font-semibold text-white">Dr. Seyed Mojtaba Hosseini Bamakan</p>
+                        <p class="mt-2 text-slate-400">Decentralized Digital Twin Systems</p>
+                        <p class="mt-5 text-slate-300">Email: <a href="mailto:contact@dedts.example" class="text-sky-300 hover:text-sky-200">contact@dedts.example</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
