@@ -11,7 +11,7 @@ const fadeUp = {
 }
 
 const STATS = [
-  { value: '2024', label: 'Publication Year', icon: FiBook, color: 'from-blue-500 to-cyan-500' },
+  { value: '2026', label: 'Publication Year', icon: FiBook, color: 'from-blue-500 to-cyan-500' },
   { value: 'O1–O4', label: 'Research Objectives', icon: FiZap, color: 'from-violet-500 to-blue-500' },
   { value: '5', label: 'Challenges Addressed', icon: FiShield, color: 'from-cyan-500 to-teal-500' },
   { value: 'Elsevier', label: 'Publisher', icon: FiLayers, color: 'from-blue-600 to-indigo-500' },
