@@ -1,5 +1,24 @@
-# Ignore the source PDF used for updating website content
-1-s2.0-S2772918424000304-main.pdf
+# Build output
+dist/
+node_modules/
 
-# Ignore the nested DeDTs repository folder
-DeDTs/
+# Local project files not for repo
+1-s2.0-S2772918424000304-main.pdf
+DeDTs.code-workspace
+Hosseini -Seminar Talk.pptx
+Prompt.txt
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS
+Thumbs.db
+.DS_Store
